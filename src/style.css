@@ -474,6 +474,14 @@ h2 {
 .stat-item .stat-label {
   font-size: 12px; color: var(--text-dim); margin-top: 6px; display: block; letter-spacing: 0.02em;
 }
+.proof-market-note {
+  font-size: 13px; color: var(--text-dim);
+  margin: 20px 0 0; padding: 10px 14px;
+  background: rgba(79,142,247,0.05);
+  border-left: 2px solid rgba(79,142,247,0.25);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.5;
+}
 
 /* Before/After comparison */
 .comparison-wrap { margin-top: 24px; }
