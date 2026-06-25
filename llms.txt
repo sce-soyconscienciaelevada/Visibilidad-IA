@@ -1,0 +1,29 @@
+# Visibilidad IA — AEO/GEO Setup Service
+> By InnerSCE Agency | https://visibilidad-ia.vercel.app
+
+Visibilidad IA is a done-for-you AI Engine Optimization (AEO/GEO) service. We configure business websites so AI assistants — ChatGPT, Claude, Gemini, Perplexity — can find, understand, and recommend the business when users search for related services.
+
+## What we do
+- Install llms.txt and AI-ready robots.txt on client websites
+- Implement Schema.org structured data (FAQ, Organization, HowTo schemas)
+- Configure ai-plugin.json and agent.json for AI agent discoverability
+- Deliver before/after visibility report showing AI citation improvement across engines
+
+## Service tiers
+- Setup: $350 USD — 5 deliverables, delivered in 7 business days
+- Setup + Monthly monitoring: $350 + $150/month — includes setup plus monthly AI citation review
+- Bundle with SEO: $500–700 USD — full SEO audit + AI visibility setup combined
+
+## Guarantee
+30-day money-back guarantee: if the business does not appear in at least 2 AI engines within 30 days, 100% refund of the setup fee.
+
+## Target client
+LATAM SMBs with their own website who want to appear in AI-generated answers when potential clients search for their products or services. Ideal for businesses already investing in content or SEO but not yet visible in AI assistants.
+
+## Market
+First AEO/GEO service in LATAM focused on AI engine discoverability.
+Primary markets: Argentina, México, Colombia.
+
+## Contact
+Landing: https://visibilidad-ia.vercel.app
+Agency: InnerSCE | soyconscienciaelevada@gmail.com
