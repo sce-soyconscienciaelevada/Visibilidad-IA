@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <!-- updated: 2026-06-25 22:29 -->
@@ -1336,6 +1336,96 @@
   </div>
 </section>
 
+
+<!-- FAQ -->
+<style>
+  .faq { background: var(--bg-card); }
+  .faq-list { margin-top: 32px; display: flex; flex-direction: column; gap: 2px; }
+  .faq-item { border: 1px solid var(--accent-border); border-radius: var(--radius); overflow: hidden; }
+  .faq-q {
+    width: 100%; background: none; border: none; padding: 18px 22px;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    font-size: 15px; font-weight: 600; color: var(--text); text-align: left;
+    cursor: pointer; transition: background .15s;
+  }
+  .faq-q:hover { background: rgba(79,142,247,0.06); }
+  .faq-q .faq-icon { font-size: 18px; flex-shrink: 0; transition: transform .25s; color: var(--accent); }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0; overflow: hidden; transition: max-height .3s ease;
+    font-size: 14px; color: var(--text-muted); line-height: 1.7;
+  }
+  .faq-item.open .faq-a { max-height: 300px; }
+  .faq-a-inner { padding: 0 22px 18px; }
+</style>
+<section class="section faq">
+  <div class="container">
+    <span class="section-label">Preguntas frecuentes</span>
+    <h2>Lo que más nos preguntan</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q">¿Qué es AEO o visibilidad IA? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          AEO (Answer Engine Optimization) es configurar tu sitio web para que los motores de IA — ChatGPT, Claude, Gemini, Perplexity — puedan encontrarlo, leerlo y recomendarlo cuando alguien pregunta por servicios como el tuyo.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">¿Qué incluye exactamente el servicio? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          5 entregables: <strong>llms.txt</strong> (contexto estructurado para IAs), <strong>robots.txt</strong> adaptado para crawlers IA, <strong>Schema.org</strong> (FAQ, Organization, HowTo), <strong>ai-plugin.json</strong> para agentes IA, y una capa de contenido IA-ready. Todo incluye reporte antes/después de visibilidad.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">¿Tengo que cambiar el diseño de mi sitio? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          No. El servicio es 100% técnico — no modifica el diseño visual, las páginas ni la experiencia del usuario. Los archivos se agregan al servidor o plataforma sin tocar el frontend.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">¿En cuánto tiempo lo implementan? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          La implementación completa toma <strong>hasta 7 días hábiles</strong> desde el primer contacto. El reporte antes/después se entrega junto con los archivos.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">¿Para qué tipo de negocios funciona? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          Para cualquier negocio con sitio web propio que venda servicios o productos en LATAM. Especialmente útil para quienes ya invierten en SEO o contenido pero no aparecen en las respuestas de ChatGPT, Claude o Gemini.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">¿Tienen garantía? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          Sí. <strong>Garantía de 30 días:</strong> si tu negocio no aparece en al menos 2 motores de IA dentro de los 30 días, devolvemos el 100% del setup. Sin preguntas.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">¿Cuánto cuesta? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          Setup único: <strong>$350 USD</strong>, entrega en hasta 7 días hábiles. Setup + Monitoreo mensual: <strong>$350 + $150/mes</strong> (incluye revisión mensual de apariciones en IAs y actualizaciones cuando los modelos cambian). Actualmente en precio de lanzamiento — primeros 10 clientes.
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
 <!-- FORM -->
 <section class="section form-section" id="form">
   <div class="container">
@@ -1439,8 +1529,8 @@
 <footer>
   <div class="container">
     <p>
-      InnerSCE Agency ·
-      <a href="mailto:soyconscienciaelevada@gmail.com">soyconscienciaelevada@gmail.com</a>
+      <a href="https://innersce.vercel.app" target="_blank" rel="noopener">InnerSCE Agency</a> ·
+      <a href="#form">Solicitar auditoría →</a>
     </p>
     <p style="margin-top: 8px; font-size: 12px;">
       Visibilidad IA es un servicio de InnerSCE. Primer servicio AEO en LATAM.
